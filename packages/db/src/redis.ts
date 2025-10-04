@@ -1,4 +1,4 @@
 import { Redis } from 'ioredis'
 import { config } from '@shared/config.js'
 
-export const redis = new Redis(config.REDIS_URL)
+export const redis = new Redis(config.redisUrl)

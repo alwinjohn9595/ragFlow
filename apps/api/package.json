@@ -8,10 +8,16 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "bullmq": "^4.16.0",
-    "@shared": "workspace:*",
     "@llm": "workspace:*",
-    "@db": "workspace:*"
+    "@ragflow/db": "workspace:*",
+    "@shared": "workspace:*",
+    "@types/body-parser": "^1.19.6",
+    "@types/cors": "^2.8.19",
+    "@types/morgan": "^1.9.10",
+    "bullmq": "^4.16.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3"
   }
 }

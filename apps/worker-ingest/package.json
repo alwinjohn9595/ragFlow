@@ -1,0 +1,12 @@
+{
+  "name": "@ragflow/worker-ingest",
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "bullmq": "^4.16.0",
+    "@shared": "workspace:*",
+    "@llm": "workspace:*",
+    "@ragflow/db": "workspace:*"
+  },
+  "scripts": { "dev": "ts-node src/index.ts" }
+}

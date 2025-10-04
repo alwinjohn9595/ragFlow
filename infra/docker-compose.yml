@@ -1,0 +1,16 @@
+services:
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+  milvus:
+    image: milvusdb/milvus:v2.4.0
+    ports:
+      - "19530:19530"
+      - "9091:9091"
+  api:
+    build: ../apps/api
+    depends_on: [redis]
+    ports: ["3000:3000"]
+  worker-ingest:
+    build: ../apps/worker-ingest
+    depends_on: [redis]
