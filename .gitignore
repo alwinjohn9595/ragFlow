@@ -1,1 +1,47 @@
+# ---------------------------
+# Node / TypeScript
+# ---------------------------
 node_modules/
+**/node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---------------------------
+# Environment / Config
+# ---------------------------
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# ---------------------------
+# TypeScript
+# ---------------------------
+*.tsbuildinfo
+
+# ---------------------------
+# IDE Files
+# ---------------------------
+.vscode/
+.idea/
+*.swp
+
+# ---------------------------
+# OS Artifacts
+# ---------------------------
+Thumbs.db
+.DS_Store
+
+# ---------------------------
+# Docker & Infra
+# ---------------------------
+docker/*.local.*
+infra/.terraform/
+infra/terraform.tfstate*
+*.pid
+*.sock
