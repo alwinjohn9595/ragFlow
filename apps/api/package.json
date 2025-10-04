@@ -1,0 +1,17 @@
+{
+  "name": "@ragflow/api",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "bullmq": "^4.16.0",
+    "@shared": "workspace:*",
+    "@llm": "workspace:*",
+    "@db": "workspace:*"
+  }
+}
